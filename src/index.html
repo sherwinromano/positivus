@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positivus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="shortcut icon"
+      href="assets/logo-light.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="flex flex-col overflow-x-hidden">
+    <header
+      class="flex justify-between items-center mt-8 md:mt-12 lg:mt-14 px-8 md:px-12 lg:px-14"
+    >
+      <a class="flex items-center gap-3" href="/">
+        <img src="./assets/logo.svg" alt="Positivus Logo" class="size-7" />
+        <span class="font-semibold text-2xl -tracking-tight">Positivus</span>
+      </a>
+      <section class="hidden lg:flex items-center gap-9">
+        <nav>
+          <ul class="flex gap-8">
+            <li><a class="text-lg xl:text-20" href="/">About us</a></li>
+            <li><a class="text-lg xl:text-20" href="/">Services</a></li>
+            <li><a class="text-lg xl:text-20" href="/">Use Cases</a></li>
+            <li><a class="text-lg xl:text-20" href="/">Pricing</a></li>
+            <li><a class="text-lg xl:text-20" href="/">Blog</a></li>
+          </ul>
+        </nav>
+        <a
+          href="/"
+          role="button"
+          class="border px-8.75 py-5 border-[#191A23] text-lg xl:text-20 rounded-[14px]"
+          >Request a quote</a
+        >
+      </section>
+      <button id="open-sidebar-btn" class="grid place-items-center lg:hidden">
+        <img src="./assets/bars-3.svg" alt="Menu icon" class="size-8" />
+      </button>
+      <aside
+        class="flex flex-col bg-white w-3/4 md:w-1/2 h-full fixed top-0 -right-full z-50 transition-all p-8 md:p-8 gap-8"
+      >
+        <button id="close-sidebar-btn" class="grid place-items-center self-end">
+          <img
+            class="size-8"
+            src="assets/x-mark.svg"
+            alt="x mark icon"
+            width="24"
+            height="24"
+          />
+        </button>
+        <section class="flex flex-col gap-9">
+          <nav>
+            <ul class="flex flex-col gap-4">
+              <li class="flex">
+                <a class="text-lg xl:text-20 basis-full py-3" href="/"
+                  >About us</a
+                >
+              </li>
+              <li class="flex">
+                <a class="text-lg xl:text-20 basis-full py-3" href="/"
+                  >Services</a
+                >
+              </li>
+              <li class="flex">
+                <a class="text-lg xl:text-20 basis-full py-3" href="/"
+                  >Use Cases</a
+                >
+              </li>
+              <li class="flex">
+                <a class="text-lg xl:text-20 basis-full py-3" href="/"
+                  >Pricing</a
+                >
+              </li>
+              <li class="flex">
+                <a class="text-lg xl:text-20 basis-full py-3" href="/">Blog</a>
+              </li>
+            </ul>
+          </nav>
+          <a
+            href="/"
+            role="button"
+            class="border px-8.75 py-4 sm:py-5 border-[#191A23] text-center text-lg xl:text-20 rounded-[14px]"
+            >Request a quote</a
+          >
+        </section>
+      </aside>
+      <div
+        id="overlay"
+        class="fixed z-30 inset-0 invisible opacity-0 duration-75 bg-[rgba(0,0,0,0.4)]"
+      ></div>
+    </header>
+    <main class="flex flex-col h-fit gap-35 px-8 md:px-12 lg:px-14">
+      <section class="flex flex-col gap-16 mt-16">
+        <section class="flex justify-between">
+          <div
+            class="flex flex-col items-center lg:items-start gap-8 lg:basis-1/2"
+          >
+            <h1
+              class="font-medium text-[2.5rem] lg:text-6xl text-center lg:text-start"
+            >
+              Navigating the digital landscape for success
+            </h1>
+            <p class="leading-7 text-base sm:text-xl text-center lg:text-start">
+              Our digital marketing agency helps businesses grow and succeed
+              online through a range of services including SEO, PPC, social
+              media marketing, and content creation.
+            </p>
+            <a
+              href="/"
+              class="bg-dark text-white text-base sm:text-xl rounded-[14px] py-5 px-8"
+              role="button"
+            >
+              Book a consultation
+            </a>
+          </div>
+          <div class="hidden lg:flex basis-auto">
+            <img
+              src="./assets/illustrations/hero.png"
+              alt="Hero illustration"
+              width="601"
+              height="515"
+            />
+          </div>
+        </section>
+        <section class="carousel overflow-hidden">
+          <div class="carousel-track flex">
+            <ul
+              class="carousel-group flex items-center shrink-0 justify-between w-full pr-32"
+            >
+              <li>
+                <img
+                  src="./assets/brand-logo/amazon.png"
+                  alt="Amazon logo"
+                  width="125"
+                  height="48"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/brand-logo/dribbble.png"
+                  alt="Dribble logo"
+                  width="127"
+                  height="48"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/brand-logo/hubspot.png"
+                  alt="Hubspot logo"
+                  width="129"
+                  height="48"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/brand-logo/notion.png"
+                  alt="Notion logo"
+                  width="146"
+                  height="48"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/brand-logo/netflix.png"
+                  alt="Netflix logo"
+                  width="126"
+                  height="48"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/brand-logo/zoom.png"
+                  alt="Zoom logo"
+                  width="111"
+                  height="48"
+                />
+              </li>
+            </ul>
+            <ul
+              aria-hidden="true"
+              class="carousel-group flex items-center shrink-0 justify-between w-full"
+            >
+              <li>
+                <img
+                  src="./assets/brand-logo/amazon.png"
+                  alt="Amazon logo"
+                  width="125"
+                  height="48"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/brand-logo/dribbble.png"
+                  alt="Dribble logo"
+                  width="127"
+                  height="48"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/brand-logo/hubspot.png"
+                  alt="Hubspot logo"
+                  width="129"
+                  height="48"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/brand-logo/notion.png"
+                  alt="Notion logo"
+                  width="146"
+                  height="48"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/brand-logo/netflix.png"
+                  alt="Netflix logo"
+                  width="126"
+                  height="48"
+                />
+              </li>
+              <li>
+                <img
+                  src="./assets/brand-logo/zoom.png"
+                  alt="Zoom logo"
+                  width="111"
+                  height="48"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <section class="flex flex-col gap-20">
+        <section
+          class="flex flex-col lg:flex-row items-start gap-10 w-full lg:w-[65%]"
+        >
+          <div class="bg-green px-1.75 rounded-[7px]">
+            <h2 class="font-medium text-[2.25rem] lg:text-[2.5rem]">
+              Services
+            </h2>
+          </div>
+          <p class="leading-7 text-base sm:text-xl">
+            At our digital marketing agency, we offer a range of services to
+            help businesses grow and succeed online. These services include:
+          </p>
+        </section>
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          <div
+            class="services-card flex flex-col md:flex-row items-center justify-between p-10 sm:p-12.5 border border-dark rounded-[45px]"
+          >
+            <div
+              class="flex flex-col sm:flex-row md:flex-col order-1 md:order-0 gap-12 mt-24 md:mt-0 md:gap-24 lg:gap-22.5 self-stretch justify-between"
+            >
+              <h3 class="font-medium text-[1.625rem] sm:text-[1.875rem]">
+                <span class="bg-green px-1.75 rounded-[7px]">Search engine</span
+                ><br /><span class="bg-green px-1.75 rounded-[7px]"
+                  >optimization</span
+                >
+              </h3>
+              <a href="/" class="flex items-center gap-3.75">
+                <img
+                  src="./assets/green-arrow.svg"
+                  alt="A circle with arrow image"
+                  width="41"
+                  height="41"
+                />
+                <span class="leading-7 text-base sm:text-xl">Learn more</span>
+              </a>
+            </div>
+            <img
+              src="./assets/illustrations/tokyo-magnifier-web-search-with-elements 2.png"
+              alt="Web search illustration"
+              width="210"
+              height="167"
+            />
+          </div>
+          <div
+            class="services-card bg-green flex flex-col md:flex-row items-center justify-between p-10 sm:p-12.5 border border-dark rounded-[45px]"
+          >
+            <div
+              class="flex flex-col sm:flex-row md:flex-col order-1 md:order-0 gap-12 mt-24 md:mt-0 md:gap-24 lg:gap-22.5 self-stretch justify-between"
+            >
+              <h3 class="font-medium text-[1.625rem] sm:text-[1.875rem]">
+                <span class="bg-white px-1.75 rounded-[7px]">Pay-per-click</span
+                ><br /><span class="bg-white px-1.75 rounded-[7px]"
+                  >advertising</span
+                >
+              </h3>
+              <a href="/" class="flex items-center gap-3.75">
+                <img
+                  src="./assets/green-arrow.svg"
+                  alt="A circle with arrow image"
+                  width="41"
+                  height="41"
+                />
+                <span class="leading-7 text-base sm:text-xl">Learn more</span>
+              </a>
+            </div>
+            <img
+              src="./assets/illustrations/tokyo-selecting-a-value-in-the-browser-window 1.png"
+              alt="Selecting a value illustration"
+              width="210"
+              height="148"
+            />
+          </div>
+          <div
+            class="services-card bg-dark flex flex-col md:flex-row items-center justify-between p-10 sm:p-12.5 border border-dark rounded-[45px]"
+          >
+            <div
+              class="flex flex-col sm:flex-row md:flex-col order-1 md:order-0 gap-12 mt-24 md:mt-0 md:gap-24 lg:gap-22.5 self-stretch justify-between"
+            >
+              <h3 class="font-medium text-[1.625rem] sm:text-[1.875rem]">
+                <span class="bg-white px-1.75 rounded-[7px]">Social Media</span
+                ><br /><span class="bg-white px-1.75 rounded-[7px]"
+                  >Marketing</span
+                >
+              </h3>
+              <a href="/" class="flex items-center gap-3.75">
+                <img
+                  src="./assets/black-arrow.svg"
+                  alt="A circle with arrow image"
+                  width="41"
+                  height="41"
+                />
+                <span class="leading-7 text-base sm:text-xl text-white"
+                  >Learn more</span
+                >
+              </a>
+            </div>
+            <img
+              src="./assets/illustrations/tokyo-browser-window-with-emoticon-likes-and-stars-around 2.png"
+              alt="Web emoticon illustration"
+              width="209"
+              height="210"
+            />
+          </div>
+          <div
+            class="services-card bg-white flex flex-col md:flex-row items-center justify-between p-10 sm:p-12.5 border border-dark rounded-[45px]"
+          >
+            <div
+              class="flex flex-col sm:flex-row md:flex-col order-1 md:order-0 gap-12 mt-24 md:mt-0 md:gap-24 lg:gap-22.5 self-stretch justify-between"
+            >
+              <h3 class="font-medium text-[1.625rem] sm:text-[1.875rem]">
+                <span class="bg-green px-1.75 rounded-[7px]">Email</span
+                ><br /><span class="bg-green px-1.75 rounded-[7px]"
+                  >Marketing</span
+                >
+              </h3>
+              <a href="/" class="flex items-center gap-3.75">
+                <img
+                  src="./assets/green-arrow.svg"
+                  alt="A circle with arrow image"
+                  width="41"
+                  height="41"
+                />
+                <span class="leading-7 text-base sm:text-xl">Learn more</span>
+              </a>
+            </div>
+            <img
+              src="./assets/illustrations/tokyo-sending-messages-from-one-place-to-another 1.png"
+              alt="Sending email illustration"
+              width="210"
+              height="193"
+            />
+          </div>
+          <div
+            class="services-card bg-green flex flex-col md:flex-row items-center justify-between p-10 sm:p-12.5 border border-dark rounded-[45px]"
+          >
+            <div
+              class="flex flex-col sm:flex-row md:flex-col order-1 md:order-0 gap-12 mt-24 md:mt-0 md:gap-24 lg:gap-22.5 self-stretch justify-between"
+            >
+              <h3 class="font-medium text-[1.625rem] sm:text-[1.875rem]">
+                <span class="bg-white px-1.75 rounded-[7px]">Content</span
+                ><br /><span class="bg-white px-1.75 rounded-[7px]"
+                  >Creation</span
+                >
+              </h3>
+              <a href="/" class="flex items-center gap-3.75">
+                <img
+                  src="./assets/green-arrow.svg"
+                  alt="A circle with arrow image"
+                  width="41"
+                  height="41"
+                />
+                <span class="leading-7 text-base sm:text-xl">Learn more</span>
+              </a>
+            </div>
+            <img
+              src="./assets/illustrations/tokyo-many-browser-windows-with-different-information 1.png"
+              alt="Browser window illustration"
+              width="210"
+              height="196"
+            />
+          </div>
+          <div
+            class="services-card bg-dark flex flex-col md:flex-row items-center justify-between p-10 sm:p-12.5 border border-dark rounded-[45px]"
+          >
+            <div
+              class="flex flex-col sm:flex-row md:flex-col order-1 md:order-0 gap-12 mt-24 md:mt-0 md:gap-24 lg:gap-22.5 self-stretch justify-between"
+            >
+              <h3 class="font-medium text-[1.625rem] sm:text-[1.875rem]">
+                <span class="bg-green px-1.75 rounded-[7px]">Analytics and</span
+                ><br /><span class="bg-green px-1.75 rounded-[7px]"
+                  >Tracking</span
+                >
+              </h3>
+              <a href="/" class="flex items-center gap-3.75">
+                <img
+                  src="./assets/black-arrow.svg"
+                  alt="A circle with arrow image"
+                  width="41"
+                  height="41"
+                />
+                <span class="leading-7 text-base sm:text-xl text-white"
+                  >Learn more</span
+                >
+              </a>
+            </div>
+            <img
+              src="./assets/illustrations/tokyo-volumetric-analytics-of-different-types-in-web-browsers 2.png"
+              alt="Analytics illustration"
+              width="210"
+              height="170"
+            />
+          </div>
+        </section>
+        <section
+          class="bg-ivory-white rounded-[45px] p-10 sm:p-15 flex relative mt-5"
+        >
+          <div class="flex flex-col items-start gap-6.5 w-full lg:w-[40%]">
+            <h3 class="font-medium text-[1.625rem] sm:text-[1.875rem]">
+              Let's make things happen
+            </h3>
+            <p class="text-base leading-6 sm:leading-normal sm:text-lg">
+              Contact us today to learn more about how our digital marketing
+              services can help your business grow and succeed online.
+            </p>
+            <a
+              href="/"
+              class="bg-dark text-white text-center text-base sm:text-xl rounded-[14px] py-5 px-8"
+              role="button"
+            >
+              Get your free proposal
+            </a>
+          </div>
+          <img
+            class="hidden lg:block absolute right-24 -top-8"
+            src="./assets/illustrations/services.png"
+            alt="Services illustration"
+            width="359"
+            height="395"
+          />
+        </section>
+      </section>
+      <section class="flex flex-col gap-20">
+        <section class="flex flex-col lg:flex-row items-start gap-10 w-full">
+          <div class="bg-green px-1.75 rounded-[7px] w-fit">
+            <h2 class="font-medium text-[2.25rem] lg:text-[2.5rem]">
+              Case Studies
+            </h2>
+          </div>
+          <p class="leading-7 text-base sm:text-xl w-full lg:w-[45%]">
+            Explore Real-Life Examples of Our Proven Digital Marketing Success
+            through Our Case Studies
+          </p>
+        </section>
+        <section
+          class="bg-dark flex flex-col lg:flex-row py-15 px-12 sm:py-17.5 sm:px-15 rounded-[45px] gap-16"
+        >
+          <div class="flex flex-col gap-12 lg:gap-5">
+            <p class="text-white text-base sm:text-lg">
+              For a local restaurant, we implemented a targeted PPC campaign
+              that resulted in a 50% increase in website traffic and a 25%
+              increase in sales.
+            </p>
+            <a
+              href="/"
+              class="flex items-center gap-3.75 text-white text-lg sm:text-20"
+            >
+              Learn more
+              <img
+                src="./assets/single-arrow.svg"
+                alt="Green arrow icon"
+                width="21"
+                height="20"
+              />
+            </a>
+          </div>
+          <div
+            class="flex flex-col gap-12 lg:gap-5 border-y lg:border-y-0 lg:border-x border-white py-16 lg:py-0 lg:px-16"
+          >
+            <p class="text-white text-base sm:text-lg">
+              For a B2B software company, we developed an SEO strategy that
+              resulted in a first page ranking for key keywords and a 200%
+              increase in organic traffic.
+            </p>
+            <a
+              href="/"
+              class="flex items-center gap-3.75 text-white text-lg sm:text-20"
+            >
+              Learn more
+              <img
+                src="./assets/single-arrow.svg"
+                alt="Green arrow icon"
+                width="21"
+                height="20"
+              />
+            </a>
+          </div>
+          <div class="flex flex-col gap-12 lg:gap-5">
+            <p class="text-white text-base sm:text-lg">
+              For a national retail chain, we created a social media marketing
+              campaign that increased followers by 25% and generated a 20%
+              increase in online sales.
+            </p>
+            <a
+              href="/"
+              class="flex items-center gap-3.75 text-white text-lg sm:text-20"
+            >
+              Learn more
+              <img
+                src="./assets/single-arrow.svg"
+                alt="Green arrow icon"
+                width="21"
+                height="20"
+              />
+            </a>
+          </div>
+        </section>
+      </section>
+      <section class="flex flex-col gap-20">
+        <section
+          class="flex flex-col lg:flex-row items-start lg:items-center gap-10 w-full"
+        >
+          <div class="bg-green px-1.75 rounded-[7px] w-fit">
+            <h2 class="font-medium text-[2.25rem] lg:text-[2.5rem]">
+              Our Working Process
+            </h2>
+          </div>
+          <p class="leading-7 text-base sm:text-xl w-full lg:w-[25%]">
+            Step-by-Step Guide to Achieving Your Business Goals
+          </p>
+        </section>
+        <section class="flex flex-col gap-7.5">
+          <details
+            class="accordion border px-8 sm:px-15 py-10 rounded-[45px] cursor-pointer"
+          >
+            <summary
+              class="list-none select-none flex justify-between items-center"
+            >
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-6.25"
+              >
+                <h2
+                  class="text-black font-medium text-[2.688rem] lg:text-[3.75rem]"
+                >
+                  01
+                </h2>
+                <p class="text-black text-[1.625rem] lg:text-[1.875rem]">
+                  Consultation
+                </p>
+              </div>
+              <img
+                src="./assets/plus.svg"
+                alt="Plus icon"
+                width="58"
+                height="58"
+              />
+            </summary>
+            <p class="border-t border-dark pt-7.5 mt-7.5 text-base lg:text-lg">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </details>
+          <details
+            class="accordion border px-8 sm:px-15 py-10 rounded-[45px] cursor-pointer"
+          >
+            <summary
+              class="list-none select-none flex justify-between items-center"
+            >
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-6.25"
+              >
+                <h2
+                  class="text-black font-medium text-[2.688rem] lg:text-[3.75rem]"
+                >
+                  02
+                </h2>
+                <p class="text-black text-[1.625rem] lg:text-[1.875rem]">
+                  Research and Strategy Development
+                </p>
+              </div>
+              <img
+                src="./assets/plus.svg"
+                alt="Plus icon"
+                width="58"
+                height="58"
+              />
+            </summary>
+            <p class="border-t border-dark pt-7.5 mt-7.5 text-base lg:text-lg">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </details>
+          <details
+            class="accordion border px-8 sm:px-15 py-10 rounded-[45px] cursor-pointer"
+          >
+            <summary
+              class="list-none select-none flex justify-between items-center"
+            >
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-6.25"
+              >
+                <h2
+                  class="text-black font-medium text-[2.688rem] lg:text-[3.75rem]"
+                >
+                  03
+                </h2>
+                <p class="text-black text-[1.625rem] lg:text-[1.875rem]">
+                  Implementation
+                </p>
+              </div>
+              <img
+                src="./assets/plus.svg"
+                alt="Plus icon"
+                width="58"
+                height="58"
+              />
+            </summary>
+            <p class="border-t border-dark pt-7.5 mt-7.5 text-base lg:text-lg">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </details>
+          <details
+            class="accordion border px-8 sm:px-15 py-10 rounded-[45px] cursor-pointer"
+          >
+            <summary
+              class="list-none select-none flex justify-between items-center"
+            >
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-6.25"
+              >
+                <h2
+                  class="text-black font-medium text-[2.688rem] lg:text-[3.75rem]"
+                >
+                  04
+                </h2>
+                <p class="text-black text-[1.625rem] lg:text-[1.875rem]">
+                  Monitoring and Optimization
+                </p>
+              </div>
+              <img
+                src="./assets/plus.svg"
+                alt="Plus icon"
+                width="58"
+                height="58"
+              />
+            </summary>
+            <p class="border-t border-dark pt-7.5 mt-7.5 text-base lg:text-lg">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </details>
+          <details
+            class="accordion border px-8 sm:px-15 py-10 rounded-[45px] cursor-pointer"
+          >
+            <summary
+              class="list-none select-none flex justify-between items-center"
+            >
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-6.25"
+              >
+                <h2
+                  class="text-black font-medium text-[2.688rem] lg:text-[3.75rem]"
+                >
+                  05
+                </h2>
+                <p class="text-black text-[1.625rem] lg:text-[1.875rem]">
+                  Reporting and Communication
+                </p>
+              </div>
+              <img
+                src="./assets/plus.svg"
+                alt="Plus icon"
+                width="58"
+                height="58"
+              />
+            </summary>
+            <p class="border-t border-dark pt-7.5 mt-7.5 text-base lg:text-lg">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </details>
+          <details
+            class="accordion border px-8 sm:px-15 py-10 rounded-[45px] cursor-pointer"
+          >
+            <summary
+              class="list-none select-none flex justify-between items-center"
+            >
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center gap-0 sm:gap-6.25"
+              >
+                <h2
+                  class="text-black font-medium text-[2.688rem] lg:text-[3.75rem]"
+                >
+                  06
+                </h2>
+                <p class="text-black text-[1.625rem] lg:text-[1.875rem]">
+                  Continual Improvement
+                </p>
+              </div>
+              <img
+                src="./assets/plus.svg"
+                alt="Plus icon"
+                width="58"
+                height="58"
+              />
+            </summary>
+            <p class="border-t border-dark pt-7.5 mt-7.5 text-base lg:text-lg">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </details>
+        </section>
+      </section>
+      <section class="flex flex-col gap-20">
+        <section class="flex flex-col lg:flex-row items-start gap-10 w-full">
+          <div class="bg-green px-1.75 rounded-[7px] w-fit">
+            <h2 class="font-medium text-[2.25rem] lg:text-[2.5rem]">Team</h2>
+          </div>
+          <p class="leading-7 text-base sm:text-xl w-full lg:w-[40%]">
+            Meet the skilled and experienced team behind our successful digital
+            marketing strategies
+          </p>
+        </section>
+        <section class="flex flex-col gap-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="team border py-10 px-8.75 flex flex-col rounded-[45px]">
+              <div class="flex justify-between pb-7">
+                <div
+                  class="flex flex-col sm:flex-row gap-5 items-start sm:items-end"
+                >
+                  <img
+                    src="./assets/team/john-smith.png"
+                    alt="John Smith photo"
+                    width="106"
+                    height="103"
+                  />
+                  <div class="flex flex-col">
+                    <h4 class="font-medium text-lg lg:text-xl">John Smith</h4>
+                    <p class="text-base lg:text-lg">CEO and Founder</p>
+                  </div>
+                </div>
+                <a href="/" class="h-fit">
+                  <img
+                    src="./assets/linkedin-green.svg"
+                    alt="Linkedin icon"
+                    width="34"
+                    height="34"
+                  />
+                </a>
+              </div>
+              <div class="border-t border-black pt-7">
+                <p class="text-base lg:text-lg">
+                  10+ years of experience in digital marketing. Expertise in
+                  SEO, PPC, and content strategy
+                </p>
+              </div>
+            </div>
+            <div class="team border py-10 px-8.75 flex flex-col rounded-[45px]">
+              <div class="flex justify-between pb-7">
+                <div
+                  class="flex flex-col sm:flex-row gap-5 items-start sm:items-end"
+                >
+                  <img
+                    src="./assets/team/jane-doe.png"
+                    alt="Jane Doe photo"
+                    width="103"
+                    height="103"
+                  />
+                  <div class="flex flex-col">
+                    <h4 class="font-medium text-lg lg:text-xl">Jane Doe</h4>
+                    <p class="text-base lg:text-lg">Director of Operations</p>
+                  </div>
+                </div>
+                <a href="/" class="h-fit">
+                  <img
+                    src="./assets/linkedin-green.svg"
+                    alt="Linkedin icon"
+                    width="34"
+                    height="34"
+                  />
+                </a>
+              </div>
+              <div class="border-t border-black pt-7">
+                <p class="text-base lg:text-lg">
+                  7+ years of experience in project management and team
+                  leadership. Strong organizational and communication skills
+                </p>
+              </div>
+            </div>
+            <div class="team border py-10 px-8.75 flex flex-col rounded-[45px]">
+              <div class="flex justify-between pb-7">
+                <div
+                  class="flex flex-col sm:flex-row gap-5 items-start sm:items-end"
+                >
+                  <img
+                    src="./assets/team/michael-brown.png"
+                    alt="Michael Brown photo"
+                    width="103"
+                    height="103"
+                  />
+                  <div class="flex flex-col">
+                    <h4 class="font-medium text-lg lg:text-xl">
+                      Michael Brown
+                    </h4>
+                    <p class="text-base lg:text-lg">Senior SEO Specialist</p>
+                  </div>
+                </div>
+                <a href="/" class="h-fit">
+                  <img
+                    src="./assets/linkedin-green.svg"
+                    alt="Linkedin icon"
+                    width="34"
+                    height="34"
+                  />
+                </a>
+              </div>
+              <div class="border-t border-black pt-7">
+                <p class="text-base lg:text-lg">
+                  5+ years of experience in SEO and content creation. Proficient
+                  in keyword research and on-page optimization
+                </p>
+              </div>
+            </div>
+            <div class="team border py-10 px-8.75 flex flex-col rounded-[45px]">
+              <div class="flex justify-between pb-7">
+                <div
+                  class="flex flex-col sm:flex-row gap-5 items-start sm:items-end"
+                >
+                  <img
+                    src="./assets/team/emily-johnson.png"
+                    alt="Emily Johnson photo"
+                    width="103"
+                    height="103"
+                  />
+                  <div class="flex flex-col">
+                    <h4 class="font-medium text-lg lg:text-xl">
+                      Emily Johnson
+                    </h4>
+                    <p class="text-base lg:text-lg">PPC Manager</p>
+                  </div>
+                </div>
+                <a href="/" class="h-fit">
+                  <img
+                    src="./assets/linkedin-green.svg"
+                    alt="Linkedin icon"
+                    width="34"
+                    height="34"
+                  />
+                </a>
+              </div>
+              <div class="border-t border-black pt-7">
+                <p class="text-base lg:text-lg">
+                  3+ years of experience in paid search advertising. Skilled in
+                  campaign management and performance analysis
+                </p>
+              </div>
+            </div>
+            <div class="team border py-10 px-8.75 flex flex-col rounded-[45px]">
+              <div class="flex justify-between pb-7">
+                <div
+                  class="flex flex-col sm:flex-row gap-5 items-start sm:items-end"
+                >
+                  <img
+                    src="./assets/team/brian-williams.png"
+                    alt="Brian Williams photo"
+                    width="103"
+                    height="103"
+                  />
+                  <div class="flex flex-col">
+                    <h4 class="font-medium text-lg lg:text-xl">
+                      Brian Williams
+                    </h4>
+                    <p class="text-base lg:text-lg">Social Media Specialist</p>
+                  </div>
+                </div>
+                <a href="/" class="h-fit">
+                  <img
+                    src="./assets/linkedin-green.svg"
+                    alt="Linkedin icon"
+                    width="34"
+                    height="34"
+                  />
+                </a>
+              </div>
+              <div class="border-t border-black pt-7">
+                <p class="text-base lg:text-lg">
+                  4+ years of experience in social media marketing. Proficient
+                  in creating and scheduling content, analyzing metrics, and
+                  building engagement
+                </p>
+              </div>
+            </div>
+            <div class="team border py-10 px-8.75 flex flex-col rounded-[45px]">
+              <div class="flex justify-between pb-7">
+                <div
+                  class="flex flex-col sm:flex-row gap-5 items-start sm:items-end"
+                >
+                  <img
+                    src="./assets/team/sarah-kim.png"
+                    alt="Sarah Kim photo"
+                    width="103"
+                    height="103"
+                  />
+                  <div class="flex flex-col">
+                    <h4 class="font-medium text-lg lg:text-xl">Sarah Kim</h4>
+                    <p class="text-base lg:text-lg">Content Creator</p>
+                  </div>
+                </div>
+                <a href="/" class="h-fit">
+                  <img
+                    src="./assets/linkedin-green.svg"
+                    alt="Linkedin icon"
+                    width="34"
+                    height="34"
+                  />
+                </a>
+              </div>
+              <div class="border-t border-black pt-7">
+                <p class="text-base lg:text-lg">
+                  2+ years of experience in writing and editing Skilled in
+                  creating compelling, SEO-optimized content for various
+                  industries
+                </p>
+              </div>
+            </div>
+          </div>
+          <a
+            href="/"
+            role="button"
+            class="bg-dark rounded-[14px] px-8.75 py-5 text-white text-lg lg:text-xl self-center sm:self-end cursor-pointer"
+          >
+            See all team
+          </a>
+        </section>
+      </section>
+      <section class="flex flex-col gap-20">
+        <section class="flex flex-col lg:flex-row items-start gap-10 w-full">
+          <div class="bg-green px-1.75 rounded-[7px] w-fit">
+            <h2 class="font-medium text-[2.25rem] lg:text-[2.5rem]">
+              Testimonials
+            </h2>
+          </div>
+          <p class="leading-7 text-base sm:text-xl w-full lg:w-[40%]">
+            Hear from Our Satisfied Clients: Read Our Testimonials to Learn More
+            about Our Digital Marketing Services
+          </p>
+        </section>
+      </section>
+      <section class="flex flex-col gap-20">
+        <section class="flex flex-col lg:flex-row items-start gap-10 w-full">
+          <div class="bg-green px-1.75 rounded-[7px] w-fit">
+            <h2 class="font-medium text-[2.25rem] lg:text-[2.5rem]">
+              Contact Us
+            </h2>
+          </div>
+          <p class="leading-7 text-base sm:text-xl w-full lg:w-[30%]">
+            Connect with Us: Let's Discuss Your Digital Marketing Needs
+          </p>
+        </section>
+        <section
+          class="bg-ivory-white flex justify-between rounded-[43px] relative p-8 sm:p-12 md:px-25 md:pt-15 md:pb-20"
+        >
+          <form action="/" class="flex flex-col gap-10 w-full grow">
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-8.75">
+              <div class="flex items-center gap-3.5">
+                <input
+                  type="radio"
+                  name="contact"
+                  id="greeting"
+                  value="greeting"
+                  style="transform: scale(1.4); accent-color: #008000"
+                />
+                <label class="text-base lg:text-lg" for="greeting"
+                  >Say Hi</label
+                >
+              </div>
+              <div class="flex items-center gap-3.5">
+                <input
+                  type="radio"
+                  name="contact"
+                  id="quote"
+                  value="quote"
+                  style="transform: scale(1.4); accent-color: #008000"
+                />
+                <label class="text-base lg:text-lg" for="quote"
+                  >Get a Quote</label
+                >
+              </div>
+            </div>
+            <div class="flex flex-col gap-6.25">
+              <div class="flex flex-col gap-1.25">
+                <label class="text-base" for="name">Name</label>
+                <input
+                  class="outline-none rounded-[14px] px-4 md:px-7.5 py-3 sm:py-4.5 bg-white border border-black"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="flex flex-col gap-1.25">
+                <label class="text-base" for="email">Email *</label>
+                <input
+                  class="outline-none rounded-[14px] px-4 md:px-7.5 py-3 sm:py-4.5 bg-white border border-black"
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="flex flex-col gap-1.25">
+                <label class="text-base" for="name">Message *</label>
+                <textarea
+                  class="outline-none rounded-[14px] px-4 md:px-7.5 py-3 sm:py-4.5 bg-white border border-black resize-none"
+                  name="message"
+                  id="message"
+                  rows="10"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+            </div>
+            <button
+              class="bg-dark text-white py-5 rounded-[14px]"
+              type="submit"
+            >
+              Send Message
+            </button>
+          </form>
+          <img
+            class="hidden lg:block translate-x-[60%]"
+            src="./assets/illustrations/contact.png"
+            alt="Contact illustration"
+            width="691"
+            height="648"
+          />
+        </section>
+      </section>
+    </main>
+    <footer class="px-8 md:px-12 lg:px-14 mt-35">
+      <section
+        class="bg-dark flex flex-col gap-12.5 p-8 sm:px-15 sm:pt-13.75 sm:pb-12.5 rounded-t-[25px] md:rounded-t-[45px]"
+      >
+        <div class="flex flex-col gap-16">
+          <div
+            class="flex flex-col sm:flex-row items-start sm:items-center gap-8 sm:gap-0 justify-between"
+          >
+            <a class="flex items-center gap-3" href="/">
+              <img
+                src="./assets/logo-light.svg"
+                alt="Positivus Logo"
+                class="size-7"
+              />
+              <span class="font-semibold text-2xl -tracking-tight text-white"
+                >Positivus</span
+              >
+            </a>
+            <ul class="hidden lg:flex gap-8">
+              <li>
+                <a class="text-lg xl:text-20 text-white underline" href="/"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a class="text-lg xl:text-20 text-white underline" href="/"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a class="text-lg xl:text-20 text-white underline" href="/"
+                  >Use Cases</a
+                >
+              </li>
+              <li>
+                <a class="text-lg xl:text-20 text-white underline" href="/"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a class="text-lg xl:text-20 text-white underline" href="/"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+            <div class="flex gap-5">
+              <a href="/" class="grid place-items-center">
+                <img
+                  src="./assets/linkedin.svg"
+                  alt="LinkedIn logo"
+                  width="30"
+                  height="30"
+                />
+              </a>
+              <a href="/" class="grid place-items-center">
+                <img
+                  src="./assets/facebook.svg"
+                  alt="Facebook logo"
+                  width="30"
+                  height="30"
+                />
+              </a>
+              <a href="/" class="grid place-items-center">
+                <img
+                  src="./assets/twitter.svg"
+                  alt="Twitter logo"
+                  width="30"
+                  height="30"
+                />
+              </a>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-14 lg:gap-0 lg:flex-row justify-between items-start lg:items-center"
+          >
+            <div class="flex flex-col gap-5">
+              <h4
+                class="bg-green px-1.75 text-lg lg:text-xl w-fit rounded-[7px]"
+              >
+                Contact us:
+              </h4>
+              <p class="text-base lg:text-lg text-white">
+                Email: info@positivus.com
+              </p>
+              <p class="text-base lg:text-lg text-white">Phone: 555-567-8901</p>
+              <p class="text-base lg:text-lg text-white">
+                Address: 1234 Main St Moonstone City, Stardust State 12345
+              </p>
+            </div>
+            <form
+              action="/"
+              class="bg-[#292A32] flex flex-col md:flex-row gap-5 rounded-[14px] p-7 md:px-10 md:py-14 w-full"
+            >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="border rounded-[14px] px-4 md:px-7.5 py-3 sm:py-4.5 text-lg text-white outline-none w-full"
+                placeholder="Email"
+              />
+              <button
+                type="submit"
+                class="bg-green text-base lg:text-xl px-8.75 py-4 sm:py-5 rounded-[14px] cursor-pointer w-full leading-tight"
+              >
+                Subscribe to news
+              </button>
+            </form>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row border-t border-white pt-12.5 gap-10"
+        >
+          <p class="text-white text-lg">
+            © 2023 Positivus. All Rights Reserved.
+          </p>
+          <a href="/" class="text-white underline text-lg">Privacy Policy</a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
