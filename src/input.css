@@ -38,3 +38,17 @@ body {
 .accordion-open {
   background-color: #b9ff66;
 }
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
